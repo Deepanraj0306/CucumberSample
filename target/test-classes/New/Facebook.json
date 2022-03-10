@@ -1,0 +1,125 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 32469813400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeClass()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "verify login functionality for valid username and valid password",
+        "description": "",
+        "id": "verify-facebook-login-functionality;verify-login-functionality-for-valid-username-and-valid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 18427894500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterClass()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 133000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on facebook login page",
+            "match": {
+              "location": "StepDefinition.user_is_on_facebook_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8246757700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters valid username and invalid password",
+            "match": {
+              "location": "StepDefinition.user_enters_valid_username_and_invalid_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "user1",
+                  "test123"
+                ]
+              },
+              {
+                "cells": [
+                  "user2",
+                  "test456"
+                ]
+              },
+              {
+                "cells": [
+                  "user3",
+                  "test789"
+                ]
+              },
+              {
+                "cells": [
+                  "user4",
+                  "test678"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3211037400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user clicks the login button",
+            "match": {
+              "location": "StepDefinition.user_clicks_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Error is displayed",
+            "match": {
+              "location": "StepDefinition.error_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "verify Facebook login functionality",
+    "description": "",
+    "id": "verify-facebook-login-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Login.feature",
+    "tags": []
+  }
+]
